@@ -41,7 +41,6 @@ array = [1,5,2,8,7,3]
 
 array.map { |element| element * 2 }
   puts element
-end
 
 
 
