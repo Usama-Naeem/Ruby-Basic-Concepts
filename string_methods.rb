@@ -1,6 +1,7 @@
 
 a = "a laZy FOX jump OVer tHe crazy dog "
 b="15"
+#ans = a.split("")   #convert string into an array
 
 # ans = a.length    returns the number of characters in a string including white-space.
 
