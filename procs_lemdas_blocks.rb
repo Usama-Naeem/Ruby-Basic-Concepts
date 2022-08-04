@@ -77,6 +77,12 @@
 
 ##################################  DIFFRENCE BTWN PROC AND LAMBDA#  #############################33
 
+# Here is a summary of how procs and lambdas are different:
+
+# Lambdas are defined with -> {} and procs with Proc.new {}.
+# Procs return from the current method, while lambdas return from the lambda itself.
+# Procs don’t care about the correct number of arguments, while lambdas will raise an exception.
+
 # PROC = In return, it will dump us out of Proc as well as method / In Break it will give local jump error
 # LAMBDA = In return/break, it will just dump us out of Proc not out of method 
 def diffrence 
@@ -84,10 +90,11 @@ def diffrence
 
   my_proc = proc{   
     puts "Inside proc" 
-    break}
+    return}
 
   my_proc.call 
 
   puts "After proc"
 end
 diffrence
+
