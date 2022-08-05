@@ -22,7 +22,10 @@ array = [1,5,2,8,7,3]
 #ans = array.flatten      flatten method can be used to take an array that contains nested arrays and create a one-dimensional array
 #ans = array.join(" ")  #.join method returns a string of all the elements of the array separated by a separator parameter.
 #puts "reject method : #{array.reject {|num| num > 10 }}\n\n"     #reject() is a Array class method which returns new array containing the items in the array for which the given block is not true
-#puts ans         
+ 
+# delete 5
+#puts "delete : #{array.delete(5)}\n\n"\
+
 
 # ans = array.each do |n|
 #   n=n*2
