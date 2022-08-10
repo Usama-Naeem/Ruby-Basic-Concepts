@@ -1,7 +1,7 @@
 #VISIT FOR DETAILED DOCS  https://ruby-doc.org/core-3.1.0/Array.html
 
-a = [18, 22, 'foo', 'cat', nil, 6, nil, 6, 22, 'foo']
-arr = [1, 2, 3, 4, 5, 6]
+# a = [18, 22, 'foo', 'cat', nil, 6, nil, 6, 22, 'foo']
+# arr = [1, 2, 3, 4, 5, 6]
 
 #######################################  ACCESSING ELEMENTS ###############################
 
@@ -43,4 +43,16 @@ arr = [1, 2, 3, 4, 5, 6]
 
 # arr.drop_while {|a| a < 4}   #=> [4, 5, 6]
 
+#str = "This can be split into smaller pieces"
 
+
+a= 512
+array=a.to_s.split('').map(&:to_i)
+#puts n.length
+for i in 0... array.length
+  for j in 1 ... array.length  
+    if array[i]==array[j] 
+      puts "#{array[i]} and #{array[j]} "
+    end 
+  end 
+end   
